@@ -43,7 +43,9 @@ echo "#############################################"
 echo "######### Setting env vars" 
 echo "#############################################" 
 
-REMOTE_REPO="https://${GITHUB_PERSONAL_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+GITHUB_REPOSITORY="caprover-one-click-apps-devenv"
+REMOTE_REPO="git@github.com:wireframeslayout/${GITHUB_REPOSITORY}.git"
+#REMOTE_REPO="https://${GITHUB_PERSONAL_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 REPONAME="$(echo $GITHUB_REPOSITORY| cut -d'/' -f 2)"
 
 OWNER="$(echo $GITHUB_REPOSITORY| cut -d'/' -f 1)" 
@@ -82,8 +84,8 @@ echo "#############################################"
 echo "######### Commit and push ###" 
 echo "#############################################" 
 sleep 1s
-git config user.name "${GITHUB_ACTOR}"
-git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+#git config user.name "${GITHUB_ACTOR}"
+#git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 echo `date` >> forcebuild.date
 git add -A 
 git commit -m 'Deploy to GitHub Pages' 

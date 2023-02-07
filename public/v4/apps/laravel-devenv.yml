@@ -112,17 +112,17 @@ services:
                 - EXPOSE 80
                 - ENTRYPOINT ["sh", "/entrypoint.sh"]
         volumes:
-          - $$cap_env_path:/srv/app
+            - $$cap_env_path:/srv/app
         restart: always
 caproverOneClickApp:
     variables:
         - id: $$cap_php_version
-          label: php version 
+          label: php version
           defaultValue: '8.0'
         - id: $$cap_env_path
           label: development directory
           defaultValue: '/var/www/your-app-name'
-          description: set your development directory 
+          description: set your development directory
         - id: $$cap_memory_limit
           label: PHP memory limit size
           defaultValue: '512M'
@@ -130,7 +130,7 @@ caproverOneClickApp:
           label: PHP execution time
           defaultValue: '30'
         - id: $$cap_max_filesize
-          label: PHP max file size 
+          label: PHP max file size
           defaultValue: '30M'
         - id: $$cap_post_max_size
           label: PHP post max size
@@ -150,5 +150,4 @@ caproverOneClickApp:
             http://$$cap_appname.$$cap_root_domain
     displayName: 'Laravel開発環境'
     isOfficial: false
-    description: this is discription 
-
+    description: this is discription
