@@ -1,1 +1,1 @@
-{"oneClickApps":[{"name":"laravel-devenv","displayName":"Laravel開発環境","description":"this is discription","isOfficial":false,"logoUrl":"laravel-devenv.png"}]}
+{"oneClickApps":[{"name":"laravel-devenv","displayName":"Laravel開発環境","description":"this is discription","isOfficial":false,"logoUrl":"laravel-devenv.png"},{"name":"linkwarden","displayName":"Linkwarden","description":"Self-hosted collaborative bookmark manager to collect, organize, and preserve webpages.","isOfficial":true,"logoUrl":"linkwarden.png"}]}
